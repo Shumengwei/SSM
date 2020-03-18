@@ -1,0 +1,25 @@
+[{
+  "id":1,
+  "text":"业务管理",
+  "iconCls":"icon-save",
+  "children":[{
+    "text":"角色管理",
+    "checked":true
+  },{
+    "text":"用户管理",
+    "state":"open"},
+    {
+      "text":"权限管理",
+      "state":"open"
+    }]
+},{
+  "text":"系统管理",
+  "state":"closed",
+  "children":[{
+    "text":"修改密码",
+    "url": ""
+  },{
+    "text":"退出登录",
+    "url": ""
+  }]
+}]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ch.shu.mapper.UserMapper">
+    <select id="query" resultType="user">
+        select * from account;
+    </select>
+    <delete id="delete" parameterType="_int">
+        delete from account where id=#{id}
+    </delete>
+    <insert id="add" parameterType="user">
+        insert  into account (id,name,password,age) values (id=#{id},name=#{name},password=#{password},age=#{age})
+    </insert>
+</mapper>
